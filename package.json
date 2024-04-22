@@ -1,0 +1,73 @@
+{
+  "name": "@builtwithjavascript/react-file-upload-tailwind",
+  "version": "0.1.0",
+  "description": "A React file upload component with validation, styled with Tailwind CSS",
+  "author": "Damiano Fusco",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/builtwithjavascript/react-file-upload-tailwind.git"
+  },
+  "bugs": {
+    "url": "https://github.com/builtwithjavascript/react-file-upload-tailwind/issues"
+  },
+  "homepage": "https://github.com/builtwithjavascript/react-file-upload-tailwind#readme",
+  "keywords": [
+    "component, libraries, scripts, javascript, large scale apps, vue, react, svelte, nuxt, next, node"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build-types": "tsc src/index.ts --esModuleInterop --declaration --emitDeclarationOnly --outDir dist",
+    "build": "tsc --jsx react-jsx --esModuleInterop && vite build && npm run build-types",
+    "pub": "npm publish --access public",
+    "test": "TESTING=true vitest run",
+    "test-watch": "TESTING=true vitest watch",
+    "pretty": "prettier -w \"./src/**/*.ts\"",
+    "version-patch": "npm run pretty && npm version patch -m \"Patch version\"",
+    "preversion": "npm run test",
+    "version": "npm run build",
+    "postversion": "git push"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged \"./src/**/*.ts\""
+    }
+  },
+  "devDependencies": {
+    "@builtwithjavascript/file-input-validator": "^1.0.1",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.12.7",
+    "@types/react": "^18.2.79",
+    "@types/react-dom": "^18.2.25",
+    "@vitejs/plugin-react": "^4.2.1",
+    "husky": "^9.0.11",
+    "jsdom": "^24.0.0",
+    "prettier": "^3.2.5",
+    "pretty-quick": "^4.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.10",
+    "vitest": "^1.5.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/react-file-upload-tailwind.es.js"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/react-file-upload-tailwind.umd.js"
+      }
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "main": "./dist/react-file-upload-tailwind.umd.js",
+  "module": "./dist/react-file-upload-tailwind.es.js"
+}

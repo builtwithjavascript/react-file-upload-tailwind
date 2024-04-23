@@ -18,7 +18,7 @@ export function FileValidatorComponent({ model, validatorItems, showOnlyErrors, 
       <div className="file-validator">
         {model.message && (
           <div
-            className={`file-validator-item px-4 py-2 flex items-center ${model.isValid ? 'bg-green-600' : 'bg-red-600'} text-white ${model.isValid ? 'success' : 'error'}`}
+            className={`file-validator-item px-4 py-2 flex items-center ${model.isValid ? 'success bg-green-600' : 'error bg-red-600'} text-white`}
           >
             <span className="flex-none mr-2">{model.isValid ? 'File:' : 'Error:'}</span>
             <span className="" title={model.isValid ? model.displayName : model.message}>

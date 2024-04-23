@@ -30,7 +30,7 @@ export function FileValidatorRowComponent({ model, index, totItemsCount, rounded
     }
 
     // item success/error class
-    result.push(hasError ? 'bg-red-600' : 'bg-green-600')
+    result.push(hasError ? 'error bg-red-600' : 'success bg-green-600')
 
     return result.join(' ').trim()
   }

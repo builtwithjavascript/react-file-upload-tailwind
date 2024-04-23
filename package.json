@@ -1,6 +1,6 @@
 {
   "name": "@builtwithjavascript/react-file-upload-tailwind",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A React file upload component with validation, styled with Tailwind CSS",
   "author": "Damiano Fusco",
   "license": "MIT",
@@ -18,7 +18,7 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build-types": "tsc src/index.ts --esModuleInterop --declaration --emitDeclarationOnly --outDir dist",
+    "build-types": "tsc src/index.ts --jsx react-jsx --esModuleInterop --declaration --emitDeclarationOnly --outDir dist",
     "build": "tsc --jsx react-jsx --esModuleInterop && vite build && npm run build-types",
     "pub": "npm publish --access public",
     "test": "TESTING=true vitest run",

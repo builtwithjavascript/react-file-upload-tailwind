@@ -35,7 +35,7 @@
     }
   },
   "devDependencies": {
-    "@builtwithjavascript/file-input-validator": "^1.0.1",
+    "@builtwithjavascript/file-input-validator": "^1.0.2",
     "@types/jest": "^29.5.12",
     "@types/node": "^20.12.7",
     "@types/react": "^18.2.79",

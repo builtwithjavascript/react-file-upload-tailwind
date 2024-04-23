@@ -1,6 +1,6 @@
 {
   "name": "@builtwithjavascript/react-file-upload-tailwind",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A React file upload component with validation, styled with Tailwind CSS",
   "author": "Damiano Fusco",
   "license": "MIT",

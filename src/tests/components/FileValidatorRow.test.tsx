@@ -21,7 +21,9 @@ describe('FileValidatorRowComponent', () => {
     expect(instance).toBeDefined()
     expect(instance.type).toEqual('div')
     expect(instance.props).toBeDefined()
-    expect(instance.props.className).toEqual('file-validator-item px-4 py-2 flex items-center text-white success bg-green-600')
+    expect(instance.props.className).toEqual(
+      'file-validator-item px-4 py-2 flex items-center text-white success bg-green-600'
+    )
     console.log('instance', instance)
   })
 })

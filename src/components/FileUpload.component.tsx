@@ -15,6 +15,7 @@ type IProps = {
   uploadLabel: string
   validatorOptions?: IFileValidatorOptions
   showOnlyErrors?: boolean
+  roundedCorners?: boolean
   onUploadClick: (model: IFileInfo) => Promise<any>
 }
 
@@ -72,6 +73,7 @@ export function FileUploadComponent(props: IProps) {
         id={`${props.id}-validator`}
         validatorItems={validatorItems}
         showOnlyErrors={props.showOnlyErrors}
+        roundedCorners={props.roundedCorners}
       />
 
       <button onClick={onUploadClick} 

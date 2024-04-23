@@ -1,6 +1,8 @@
 # @builtwithjavascript/react-file-upload-tailwind
 A React file upload component with validation, styled with Tailwind CSS.
 
+<img src="readme-files/react-screenshot.png" alt="React Screenshot" style="width:300px;"/>
+
 
 ## Run-time Dependencies
 - React
@@ -17,7 +19,7 @@ import type {
   IFileInfo,
   IFileValidatorOptions
 } from '@builtwithjavascript/react-file-upload-tailwind' 
-  
+
 const fileValidatorOptions: IFileValidatorOptions = {
   allowedTypes: ['csv', 'xls'],
   maxSize: 50, // in MB
@@ -27,8 +29,8 @@ const fileValidatorOptions: IFileValidatorOptions = {
 }
 
 const onUploadClick = async (fileInfo: IFileInfo) => {
-  // to what you need with fileInfo.file
-  // i.e.
+  // do what you need to do with fileInfo.file
+  // i.e. create form data and post it to an API endpoint
   const file = new FormData()
   file.append('file', fileInfo.file as Blob)
 
@@ -45,6 +47,7 @@ const onUploadClick = async (fileInfo: IFileInfo) => {
   uploadLabel="Import file"
   validatorOptions={fileValidatorOptions}
   showOnlyErrors={true}
+  roundedCorners={true}
   onUploadClick={onUploadClick}
 />
 ```

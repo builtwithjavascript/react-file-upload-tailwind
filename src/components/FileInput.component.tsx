@@ -57,7 +57,7 @@ export function FileInputComponent(props: IFileInputProps) {
 
   return (
     <label className={cssClasses()} id={props.id}>
-      <input ref={inputFileRef} name="csv-file" type="file" style={{ display: 'block' }} onChange={onInputFileChange} />
+      <input ref={inputFileRef} type="file" onChange={onInputFileChange} />
     </label>
   )
 }

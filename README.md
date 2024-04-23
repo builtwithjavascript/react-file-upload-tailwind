@@ -3,9 +3,15 @@ A React file upload component with validation, styled with Tailwind CSS.
 
 <img src="readme-files/react-screenshot.png" alt="React Screenshot" style="width:300px;"/>
 
+## NOTE
+If you need an unstyled version of this component, you can find it here:
+https://www.npmjs.com/package/@builtwithjavascript/react-file-upload
 
-## Run-time Dependencies
+
+
+## External Dependencies
 - React
+- Tailwind CSS
 
 ## Install
 ```

@@ -23,7 +23,9 @@ export function FileInputComponent(props: IFileInputProps) {
   // <span className="file-info-text hidden" title="Click to choose a file">{ labelText() }</span>
 
   const cssClasses = () => {
-    const classes: string[] = ['cursor-pointer bg-primary w-full border border-red-500 flex flex-col space-y-2 p-2 overflow-hidden overflow-ellipsis whitespace-nowrap']
+    const classes: string[] = [
+      'cursor-pointer bg-primary w-full border border-red-500 flex flex-col space-y-2 p-2 overflow-hidden overflow-ellipsis whitespace-nowrap'
+    ]
     if (props.cssClass) {
       classes.push(props.cssClass)
     }
@@ -55,7 +57,7 @@ export function FileInputComponent(props: IFileInputProps) {
 
   return (
     <label className={cssClasses()} id={props.id}>
-      <input ref={inputFileRef} name="csv-file" type="file" style={{display: 'block'}} onChange={onInputFileChange} />
+      <input ref={inputFileRef} name="csv-file" type="file" style={{ display: 'block' }} onChange={onInputFileChange} />
     </label>
   )
 }

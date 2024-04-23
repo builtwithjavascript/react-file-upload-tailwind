@@ -10,7 +10,6 @@ type IProps = {
 }
 
 export function FileValidatorRowComponent({ model, index, totItemsCount, roundedCorners }: IProps) {
-
   const cssClass = () => {
     const { hasError } = model
     const isFirst = index === 0
@@ -39,8 +38,10 @@ export function FileValidatorRowComponent({ model, index, totItemsCount, rounded
   return (
     <div className={cssClass()} title={model.value}>
       {/* TODO icon <icon class="h-4 w-4 flex-none" aria-hidden="true" :title="validationIcon" /> */}
-      <span className="property-name flex-none w-20">{ model.name }</span>
-      <span className="property-value flex-initial overflow-hidden overflow-ellipsis whitespace-nowrap">{ model.displayValue }</span>
+      <span className="property-name flex-none w-20">{model.name}</span>
+      <span className="property-value flex-initial overflow-hidden overflow-ellipsis whitespace-nowrap">
+        {model.displayValue}
+      </span>
     </div>
   )
 }

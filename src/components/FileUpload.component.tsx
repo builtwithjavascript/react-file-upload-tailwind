@@ -4,11 +4,7 @@ import { useState, useMemo } from 'react'
 import { FileInputComponent } from './FileInput.component'
 import { FileValidatorComponent } from './FileValidator.component'
 import { useFileInputValidator } from '@builtwithjavascript/file-input-validator'
-import type { 
-  IFileInfo, 
-  IFileValidatorItem,
-  IFileValidatorOptions
-} from '@builtwithjavascript/file-input-validator'
+import type { IFileInfo, IFileValidatorItem, IFileValidatorOptions } from '@builtwithjavascript/file-input-validator'
 
 type IProps = {
   id: string
@@ -41,7 +37,7 @@ export function FileUploadComponent(props: IProps) {
     if (!fileInfo.file) {
       return true
     }
-    return validatorItems.some(x => x.hasError)
+    return validatorItems.some((x) => x.hasError)
   }, [validatorItems])
 
   // @ts-ignore
@@ -62,12 +58,13 @@ export function FileUploadComponent(props: IProps) {
 
   return (
     <div className="max-w-96 space-y-2">
-      <FileInputComponent 
-        id={`${props.id}-input`} 
-        model={fileInfo} 
-        changed={onFileInputChanged} 
-        setResetFunction={setResetFunction} />
-      
+      <FileInputComponent
+        id={`${props.id}-input`}
+        model={fileInfo}
+        changed={onFileInputChanged}
+        setResetFunction={setResetFunction}
+      />
+
       <FileValidatorComponent
         model={fileInfo}
         id={`${props.id}-validator`}
@@ -76,9 +73,13 @@ export function FileUploadComponent(props: IProps) {
         roundedCorners={props.roundedCorners}
       />
 
-      <button onClick={onUploadClick} 
+      <button
+        onClick={onUploadClick}
         disabled={uploadDisabled}
-        className={`p-2 rounded-md ${ uploadDisabled ? 'bg-gray-400' : 'bg-blue-500'} color-white`}>{ props.uploadLabel }</button>
+        className={`p-2 rounded-md ${uploadDisabled ? 'bg-gray-400' : 'bg-blue-500'} color-white`}
+      >
+        {props.uploadLabel}
+      </button>
     </div>
   )
 }

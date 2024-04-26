@@ -8,10 +8,12 @@ If you need an unstyled version of this component, you can find it here:
 https://www.npmjs.com/package/@builtwithjavascript/react-file-upload
 
 
-
 ## External Dependencies
 - React
 - Tailwind CSS
+
+## Other Dependencies
+- @builtwithjavascript/file-input-validator
 
 ## Install
 ```

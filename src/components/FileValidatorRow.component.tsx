@@ -39,7 +39,9 @@ export function FileValidatorRowComponent({ model, index, totItemsCount, rounded
     <div className={cssClass()} title={model.value}>
       {/* TODO icon <icon class="h-4 w-4 flex-none" aria-hidden="true" :title="validationIcon" /> */}
       <span className="property-name flex-none w-20">{model.name}</span>
-      <span className="property-value flex-initial overflow-hidden overflow-ellipsis whitespace-nowrap">
+      <span
+        className={`property-value flex-initial ${model.hasError ? '' : 'overflow-hidden overflow-ellipsis whitespace-nowrap'}`}
+      >
         {model.displayValue}
       </span>
     </div>

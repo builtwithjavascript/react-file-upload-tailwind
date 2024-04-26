@@ -1,6 +1,6 @@
 {
   "name": "@builtwithjavascript/react-file-upload-tailwind",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "A React file upload component with validation, styled with Tailwind CSS",
   "author": "Damiano Fusco",
   "license": "MIT",
@@ -31,11 +31,11 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged \"./src/**/*.ts\""
+      "pre-commit": "pretty-quick --staged \"./src/**/*.ts*\""
     }
   },
   "devDependencies": {
-    "@builtwithjavascript/file-input-validator": "^1.0.2",
+    "@builtwithjavascript/file-input-validator": "^1.0.3",
     "@types/jest": "^29.5.12",
     "@types/node": "^20.12.7",
     "@types/react": "^18.2.79",

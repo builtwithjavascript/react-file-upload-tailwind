@@ -1,12 +1,15 @@
 # @builtwithjavascript/react-file-upload-tailwind
 A React file upload component with validation, styled with Tailwind CSS.
 
+[![npm version](https://badge.fury.io/js/@builtwithjavascript%2Freact-file-upload-tailwind.svg)](https://badge.fury.io/js/@builtwithjavascript%2Freact-file-upload-tailwind)
+
+## Screenshot
+
 <img src="readme-files/react-screenshot.png" alt="React Screenshot" style="width:300px;"/>
 
 ## NOTE
 If you need an unstyled version of this component, you can find it here:
 https://www.npmjs.com/package/@builtwithjavascript/react-file-upload
-
 
 ## External Dependencies
 - React

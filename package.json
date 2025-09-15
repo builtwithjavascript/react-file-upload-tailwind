@@ -1,6 +1,6 @@
 {
   "name": "@builtwithjavascript/react-file-upload-tailwind",
-  "version": "1.0.9",
+  "version": "1.1.1",
   "description": "A React file upload component with validation, styled with Tailwind CSS",
   "author": "Damiano Fusco",
   "license": "MIT",
@@ -19,7 +19,7 @@
   "scripts": {
     "dev": "vite",
     "build-types": "tsc src/index.ts --jsx react-jsx --esModuleInterop --declaration --emitDeclarationOnly --outDir dist",
-    "build": "tsc --jsx react-jsx --esModuleInterop && vite build && npm run build-types",
+    "build": "npm run pretty; tsc --jsx react-jsx --esModuleInterop && vite build && npm run build-types",
     "pub": "npm publish --access public",
     "test": "TESTING=true vitest run",
     "test-watch": "TESTING=true vitest watch",
@@ -30,28 +30,18 @@
     "postversion": "git push",
     "push": "npm run pretty; git add .; git commit -m \"Latest\"; git push"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged \"./src/**/*.ts*\""
-    }
-  },
   "devDependencies": {
-    "@builtwithjavascript/file-input-validator": "^1.0.3",
-    "@types/jest": "^29.5.12",
-    "@types/node": "^20.12.7",
-    "@types/react": "^18.2.79",
-    "@types/react-dom": "^18.2.25",
-    "@vitejs/plugin-react": "^4.2.1",
-    "husky": "^9.0.11",
-    "jsdom": "^24.0.0",
-    "prettier": "^3.2.5",
-    "pretty-quick": "^4.0.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.4.5",
-    "vite": "^5.2.10",
-    "vitest": "^1.5.0"
+    "@builtwithjavascript/file-input-validator": "^1.0.7",
+    "@types/node": "^24.4.0",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react": "^5.0.2",
+    "jsdom": "^27.0.0",
+    "prettier": "^3.6.2",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.5",
+    "vitest": "^3.2.4"
   },
   "files": [
     "dist"

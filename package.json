@@ -1,6 +1,6 @@
 {
   "name": "@builtwithjavascript/react-file-upload-tailwind",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A React file upload component with validation, styled with Tailwind CSS",
   "author": "Damiano Fusco",
   "license": "MIT",
@@ -31,17 +31,17 @@
     "push": "npm run pretty; git add .; git commit -m \"Latest\"; git push"
   },
   "devDependencies": {
-    "@builtwithjavascript/file-input-validator": "^1.0.7",
-    "@types/node": "^24.4.0",
-    "@types/react-dom": "^19.1.9",
-    "@vitejs/plugin-react": "^5.0.2",
-    "jsdom": "^27.0.0",
-    "prettier": "^3.6.2",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
-    "typescript": "^5.9.2",
-    "vite": "^7.1.5",
-    "vitest": "^4.1.0"
+    "@builtwithjavascript/file-input-validator": "^1.0.9",
+    "@types/node": "^25.9.1",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.2",
+    "jsdom": "^29.1.1",
+    "prettier": "^3.8.3",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.16",
+    "vitest": "^4.1.8"
   },
   "files": [
     "dist"

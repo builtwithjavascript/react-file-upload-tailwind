@@ -31,7 +31,7 @@
     "push": "npm run pretty; git add .; git commit -m \"Latest\"; git push"
   },
   "devDependencies": {
-    "@builtwithjavascript/file-input-validator": "^1.1.0",
+    "@builtwithjavascript/file-input-validator": "^1.2.0",
     "@types/node": "^26.1.2",
     "@types/react-dom": "^19.2.4",
     "@vitejs/plugin-react": "^6.0.5",

@@ -64,3 +64,10 @@ const onUploadClick = async (fileInfo: IFileInfo) => {
 ```
 
 NOTE: if you pass `showOnlyErrors` true, that only the validator items that fail will be displayed.
+
+
+## Dev Dependencies
+
+```
+@builtwithjavascript/file-input-validator @types/node @types/react-dom @vitejs/plugin-react jsdom prettier react react-dom typescript vite vitest
+```
